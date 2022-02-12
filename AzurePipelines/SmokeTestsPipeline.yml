@@ -17,5 +17,6 @@ resources:
 steps:
 
 - script: |
-    cd bin/acre TAGS=tid:9009
+    cd bin/
+    acre TAGS=tid:9009
   displayName: 'SMOKE-tests'
