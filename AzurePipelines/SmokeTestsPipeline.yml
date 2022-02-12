@@ -10,13 +10,14 @@ pool:
 
 resources:
   repositories:
-  - repository: Zeiss-Hunting-App/core
+  - repository: Zeiss-Hunting-App/ZHA
     type: git
-    name: core
+    name: ZHA
     ref:  master
 steps:
 
 - script: |
-    alias acre=bin/acre
+    ACRE_DIR=$(realpath $(dirname $(realpath $0))/..)
+    export PATH=\$PATH:$ACRE_DIR/bin
     acre TAGS=tid:9009
   displayName: 'SMOKE-tests'
