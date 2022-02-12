@@ -17,6 +17,6 @@ resources:
 steps:
 
 - script: |
-    echo alias acre=bin/acre
+    export PATH=\$PATH:bin
     acre TAGS=tid:9009
   displayName: 'SMOKE-tests'
