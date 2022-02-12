@@ -10,12 +10,12 @@ pool:
 
 resources:
   repositories:
-  - repository: Zeiss-Hunting-App/ZHA-test.git
+    - repository: Zeiss-Hunting-App/core
     type: git
-    name: ZHA-test.git
+    name: core
     ref:  master
 steps:
 
 - script: |
-    cd acre-test && ../acre/bin/acre TAGS=tid:9009
+    cd bin/acre TAGS=tid:9009
   displayName: 'SMOKE-tests'
