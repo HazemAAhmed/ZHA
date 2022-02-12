@@ -10,7 +10,7 @@ pool:
 
 resources:
   repositories:
-    - repository: Zeiss-Hunting-App/core
+  - repository: Zeiss-Hunting-App/core
     type: git
     name: core
     ref:  master
