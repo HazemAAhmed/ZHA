@@ -18,5 +18,6 @@ steps:
 
 - script: |
     cd bin/
+    install
     acre TAGS=tid:9009
   displayName: 'SMOKE-tests'
