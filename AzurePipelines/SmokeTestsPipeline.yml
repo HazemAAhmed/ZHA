@@ -18,6 +18,6 @@ steps:
 
 - script: |
     ACRE_DIR=$(realpath $(dirname $(realpath $0))/..)
-    export PATH=\$PATH:$ACRE_DIR/bin
+    alias acre=$ACRE_DIR/bin/acre
     acre TAGS=tid:9009
   displayName: 'SMOKE-tests'
