@@ -17,6 +17,6 @@ resources:
 steps:
 
 - script: |
-    alias acre=bin/acre
+    echo alias acre=bin/acre
     acre TAGS=tid:9009
   displayName: 'SMOKE-tests'
